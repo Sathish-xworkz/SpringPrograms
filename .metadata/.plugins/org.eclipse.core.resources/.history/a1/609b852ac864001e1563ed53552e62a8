@@ -1,0 +1,5 @@
+package com.sathish.annotations;
+
+public class Car {
+
+}

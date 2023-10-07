@@ -1,0 +1,15 @@
+package com.sathish;
+
+public class Book {
+	
+	// field 
+	
+	private int bid;
+	private String name;
+	
+
+	public Book() {
+		// TODO Auto-generated constructor stub
+	System.out.println("Book Object is created...");
+	}
+}

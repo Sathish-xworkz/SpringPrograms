@@ -1,0 +1,8 @@
+package com.sathish.SpringDemo;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class AppConfig {
+
+}

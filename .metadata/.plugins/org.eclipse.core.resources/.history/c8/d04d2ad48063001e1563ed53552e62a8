@@ -1,0 +1,36 @@
+package com.sathish.SpringDemo;
+
+import javax.annotation.PostConstruct;
+
+import org.springframework.beans.factory.DisposableBean;
+import org.springframework.beans.factory.InitializingBean;
+
+public class Student implements InitializingBean,
+DisposableBean{
+
+	public Student() {
+		// TODO Auto-generated constructor stub
+	System.out.println("student object..");
+	}
+
+	@Override
+	@PostConstruct
+	public void destroy() throws Exception {
+		// TODO Auto-generated method stub
+		System.out.println(
+	            "Bean HelloWorld has been "
+	            + "instantiated and I'm "
+	            + "the Destory() method");
+	}
+
+	@Override
+	public void afterPropertiesSet() throws Exception {
+		// TODO Auto-generated method stub
+		System.out.println(
+	            "Bean HelloWorld has been "
+	            + "instantiated and I'm "
+	            + "the init() method");
+	}
+	
+	 
+}

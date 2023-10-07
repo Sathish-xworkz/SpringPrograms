@@ -1,0 +1,25 @@
+package com.sathish;
+
+import org.springframework.context.annotation.Bean;
+
+public class AppConfig {
+	
+	@Bean
+	public Student getStudent() {
+		Student s=new Student();
+		s.setSid(234);
+		s.setName("sathish");
+		return s;
+	}
+	@Bean("myst")
+	public Student getStudents() {
+		return new Student();
+	}
+	// Student mystu=new Student();
+	
+	@Bean
+	public Book createbook() {
+		return new Book();
+	}
+
+}

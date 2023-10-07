@@ -1,0 +1,10 @@
+package com.sathish.annotations;
+
+public class AppAnnotationTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,9 @@
+package com.sathish;
+
+public class AppConfig {
+	
+	public Student getStudent() {
+		return new Student();
+	}
+
+}
