@@ -1,0 +1,17 @@
+package com.sathish.autowired;
+
+import org.springframework.context.annotation.Bean;
+
+public class AppConfig {
+
+	
+	@Bean
+	public AirtelSim getAirtelSim() {
+		return new AirtelSim();
+	}
+	
+	@Bean
+	public Phone getPhone() {
+		return new Phone(getAirtelSim());
+	}
+}

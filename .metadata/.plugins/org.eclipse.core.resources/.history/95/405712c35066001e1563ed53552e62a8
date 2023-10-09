@@ -1,0 +1,14 @@
+package com.sathish.autowired;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class AirtelSim implements Sim {
+
+	@Override
+	public void call() {
+
+		System.out.println("Airtel sim  make call with 1RS/call ");
+	}
+
+}

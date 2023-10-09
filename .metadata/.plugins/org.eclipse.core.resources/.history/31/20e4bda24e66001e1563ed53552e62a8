@@ -1,0 +1,20 @@
+package com.sathish.autowired;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Phone {
+
+	private AirtelSim airtelSim;
+	
+	
+	public Phone(AirtelSim airtelSim) {
+		super();
+		this.airtelSim = airtelSim;
+	}
+
+
+	void insertSim() {
+	airtelSim.call();	
+	}
+}

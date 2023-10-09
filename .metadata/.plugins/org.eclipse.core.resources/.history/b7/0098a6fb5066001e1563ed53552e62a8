@@ -1,0 +1,37 @@
+package com.sathish.autowired;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
+public class Phone {
+
+//	@Autowired  // DI
+//	private AirtelSim airtelSim;
+//	@Autowired
+//	private JioSim jioSim;
+	
+//	@Autowired
+//	private Sim sim;   // create airtel sim cupcast to sim  
+	
+	@Autowired
+	private Sim sim; 
+	
+	@Autowired
+	private Battery battery;
+	
+//	@Autowired
+//	public Phone(AirtelSim airtelSim) {
+//		super();
+//		this.airtelSim = airtelSim;
+//	}
+
+	void insertSim() {
+		sim.call();
+		System.out.println("Myphone running with :"+battery.brand +" Battery");
+	}
+//@Autowired
+//	public void setAirtelSim(AirtelSim airtelSim) {
+//		this.airtelSim = airtelSim;
+//	}
+}

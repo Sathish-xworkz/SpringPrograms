@@ -1,0 +1,11 @@
+package com.sathish.autowired;
+
+public class JioSim implements Sim {
+
+	@Override
+	public void call() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

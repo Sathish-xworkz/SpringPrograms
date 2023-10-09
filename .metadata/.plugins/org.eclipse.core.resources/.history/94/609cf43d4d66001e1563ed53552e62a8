@@ -1,0 +1,10 @@
+package com.sathish.autowired;
+
+public class Phone {
+
+	private AirtelSim airtelSim;
+	
+	void insertSim() {
+	airtelSim.call();	
+	}
+}
