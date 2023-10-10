@@ -11,8 +11,12 @@ public class TestPhone {
 		
 		ApplicationContext apx=new AnnotationConfigApplicationContext(AppConfig.class);
 		Phone p= apx.getBean(Phone.class);
-		p.insertSim();
-		p.phoneSpecfic();
+		Phone p2= apx.getBean(Phone.class);
+		
+		System.out.println(p.hashCode());
+		System.out.println(p2.hashCode());
+//		p.insertSim();
+//		p.phoneSpecfic();
 		
 	}
 
