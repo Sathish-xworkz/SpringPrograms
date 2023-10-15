@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,7 +7,16 @@
 <title>New user Page</title>
 </head>
 <body>
-<h2>Welcome to New Registration page</h2>
-<a href="home">Home</a>
+	<h2>Welcome to New Registration page</h2>
+	<a href="home">Home</a>
+	<form action="newreg" method="post">
+		<div>
+			UserName:<input type="text" name="user">
+		</div>
+		<div>
+			Password:<input type="password" name="pass">
+		</div>
+		<input type="submit" value="Registration"> <input type="reset">
+	</form>
 </body>
 </html>
