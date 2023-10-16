@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
 
 import com.sathish.xworkz.services.RegisterAndLoginService;
 
@@ -23,9 +24,26 @@ public class RegisterAndLoginController {
 
 	}
 
+//	@PostMapping("/userlogin")
+//	public String login(@RequestParam("user") String user, @RequestParam("pass") String pass) {
+//		return  registerAndLoginService.validate(user, pass);
+//	}
+	
 	@PostMapping("/userlogin")
-	public String login(@RequestParam("user") String user, @RequestParam("pass") String pass) {
-		return  registerAndLoginService.validate(user, pass);
+	public ModelAndView login(@RequestParam("user") String user, @RequestParam("pass") String pass) {
+		String pagname= registerAndLoginService.validate(user, pass);
+
+		ModelAndView mv=new ModelAndView();
+		mv.setViewName(pagname);
+		mv.addObject("username", user);
+		
+		int phone=988067224;
+		String names[]= {"sathish","divya","jaya","deepti"};
+		mv.addObject("ph", phone);
+		mv.addObject("names", names);
+		return mv;
 	}
+	
+	
 
 }
