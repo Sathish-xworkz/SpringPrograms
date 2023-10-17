@@ -23,7 +23,11 @@ public class HomeController {
 		return "index";
 	}
 	
-
+	@RequestMapping("/studentReg")
+	public String studentReg() {
+		return "studentReg";
+	}
+	
 	
 	
 	

@@ -10,7 +10,9 @@
 <body>
 	<h1 style="color: green">Welcome to Xworkz online class</h1>
 	<h2> <a href="viewproduct">ViewAllProducts</a> </h2>
-	
+	<ul>
+	<li><a href="studentReg">Student Reg</a></li>
+	</ul>
 	<h2>Login With: ${ username }</h2>
 	<h2>Contact:${ph }</h2>
 
