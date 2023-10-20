@@ -12,7 +12,7 @@ import com.sathish.xworkz.services.RegisterAndLoginService;
 
 @Controller
 public class RegisterAndLoginController {
-	private static Logger logger = LoggerFactory.getLogger(HomeController.class);
+	private static Logger logger = LoggerFactory.getLogger(RegisterAndLoginController .class);
 	@Autowired
 	private RegisterAndLoginService registerAndLoginService;
 	@PostMapping("/newreg")
@@ -21,6 +21,7 @@ public class RegisterAndLoginController {
 		//System.out.println("userName" + user);
 		//System.out.println("password " + pass);
 		logger.info("Register page data {}",user);
+		logger.info("passwod {}",pass);
 		return "register";
 
 	}

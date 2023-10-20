@@ -1,6 +1,0 @@
-package com.sathish.autowired;
-
-public class Battery {
-
-	String brand="Nokia";
-}

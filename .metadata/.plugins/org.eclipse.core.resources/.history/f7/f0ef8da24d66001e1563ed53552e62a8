@@ -1,9 +1,0 @@
-package com.sathish.autowired;
-
-public class AppConfig {
-
-	
-	public AirtelSim getAirtelSim() {
-		return new AirtelSim();
-	}
-}
