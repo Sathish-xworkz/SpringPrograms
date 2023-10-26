@@ -1,13 +1,15 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.sathish</groupId>
-  <artifactId>SpringDataJpa</artifactId>
-  <packaging>war</packaging>
-  <version>0.0.1-SNAPSHOT</version>
-  <name>SpringDataJpa Maven Webapp</name>
-  <url>http://maven.apache.org</url>
-  <properties>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.sathish</groupId>
+	<artifactId>SpringDataJpa</artifactId>
+	<packaging>war</packaging>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>SpringDataJpa Maven Webapp</name>
+	<url>http://maven.apache.org</url>
+
+<properties>
 		<failOnMissingWebXml>false</failOnMissingWebXml>
 		<spring.version>5.1.0.RELEASE</spring.version>
 		<hibernate.version>5.2.17.Final</hibernate.version>
@@ -18,8 +20,7 @@
 		<junit.version>4.10</junit.version>
 		<security-crypto.version>5.7.2</security-crypto.version>
 	</properties>
-	
-  <dependencies>
+	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
@@ -58,6 +59,7 @@
 			<version>2.7</version>
 		</dependency>
 
+
 		<!-- Spring ORM -->
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -83,16 +85,17 @@
 			<version>2.1.0.RELEASE</version>
 		</dependency>
 
+
 		<dependency>
 			<groupId>jstl</groupId>
 			<artifactId>jstl</artifactId>
 			<version>${jstl.version}</version>
 		</dependency>
 		<dependency>
-      <groupId>com.mysql</groupId>
-      <artifactId>mysql-connector-j</artifactId>
-      <version>8.0.32</version>
-    </dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.47</version>
+		</dependency>
 		<!-- logging -->
 		<dependency>
 			<groupId>org.slf4j</groupId>
@@ -121,9 +124,9 @@
 			<version>1.18.22</version>
 		</dependency>
 	</dependencies>
-  <build>
-    <finalName>SpringDataJpa</finalName>
-    <plugins>
+	<build>
+		<finalName>SpringMVCJPA</finalName>
+		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.7.0</version>
@@ -137,5 +140,5 @@
 				<version>3.2.1</version>
 			</plugin>
 		</plugins>
-  </build>
+	</build>
 </project>
