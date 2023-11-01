@@ -1,5 +1,7 @@
 package com.sathish.services;
 
+import java.util.List;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,4 +23,30 @@ public class UserService {
 		userRepository.save(user);
 		
 	}
+	
+	// retrive data 
+	public List<User> getAllUser(){
+		return  (List<User>) userRepository.findAll();
+	}
+	
+	//deleteById
+	
+	public void deleteById(int id) {
+		userRepository.deleteById(id);
+	}
+	
+	//fetch byId
+	
+	public User fetchById(int id) {
+		
+		return userRepository.findById(id).get();
+	}
+	
+	public void updateUser(User user) {
+		//userRepository.save(user);
+	}
+	
+	
+	
+	
 }

@@ -7,6 +7,9 @@
 <title>Insert title here</title>
 </head>
 <body>
+
+<a href="login">Login</a>
+<a href="view">ViewUsers</a>
 <h1>New Student Registration</h1>
 <form method="post" action="reguser" modelAttribute="user">
 <div> UserName:<input type="text" name="username"> </div>
