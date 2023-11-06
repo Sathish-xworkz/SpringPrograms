@@ -1,6 +1,7 @@
 package com.sathish.services;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -43,10 +44,11 @@ public class UserService {
 	}
 	
 	public void updateUser(User user) {
-		//userRepository.save(user);
+		System.out.println(user);
+		userRepository.save(user);
+////		userRepository.updateUserDB(user);
 	}
 	
 	
-	
-	
+
 }

@@ -71,6 +71,7 @@ public class UserController {
 	@RequestMapping("/update")
 	public String updateUser(@ModelAttribute("update-user") User user) {
 		logger.info("updated values{}",user);
+		userService.updateUser(user);
 		return "redirect:/view";
 	}
 	
